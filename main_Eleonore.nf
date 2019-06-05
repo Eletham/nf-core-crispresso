@@ -230,6 +230,7 @@ process crispresso {
     """
     CRISPResso -r1 ${reads[0]} \\
       -r2 ${reads[1]} \\
+      --trim_sequences \\
       --trimmomatic_options_string '' \\
       -a $amplicon -g $guide -o ${name}
     """
